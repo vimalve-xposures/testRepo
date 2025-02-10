@@ -1,0 +1,260 @@
+// @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;300;400;500;600;700;800&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	// font-family: "Ubuntu", sans-serif;
+	// font-family: 'Montserrat',sans-serif;
+	// font-family: 'Sora', sans-serif;
+	// font-family: 'Manrope', sans-serif;
+	// font-family: 'Raleway', sans-serif;
+	// font-family: 'Work Sans', sans-serif;
+	// font-family: 'Roboto', sans-serif;
+	font-family: "Open Sans", sans-serif;
+	// font-family: "Poppins", sans-serif;
+	// font-family: 'Source Sans Pro', sans-serif;
+	// font-family: 'Nunito', sans-serif;
+
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+small {
+	font-size: 80%;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+img {
+	vertical-align: middle;
+	border-style: none;
+	max-width: 100%;
+}
+
+textarea {
+	overflow: auto;
+	resize: vertical;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+h1 {
+	font-size: 2.25rem; //36px
+}
+
+h2 {
+	font-size: 1.75rem; //28px
+}
+
+h3 {
+	font-size: 1.375rem; //22px
+}
+
+h4 {
+	font-size: 1.125em; // 18px
+}
+
+h5 {
+	font-size: 1em; // 16px
+}
+
+h6 {
+	font-size: 0.875em; // 14px
+}
+
+// Float
+.float-left {
+	float: left !important;
+}
+
+.float-right {
+	float: right !important;
+}
+
+.float-none {
+	float: none !important;
+}
+
+// Position
+.overflow-auto {
+	overflow: auto !important;
+}
+
+.overflow-hidden {
+	overflow: hidden !important;
+}
+
+.position-static {
+	position: static !important;
+}
+
+.position-relative {
+	position: relative !important;
+}
+
+.position-absolute {
+	position: absolute !important;
+}
+
+.position-fixed {
+	position: fixed !important;
+}
+
+.position-sticky {
+	position: -webkit-sticky !important;
+	position: sticky !important;
+}
+
+.fixed-top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 9;
+}
+
+.fixed-bottom {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9;
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+	.sticky-top {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		z-index: 1020;
+	}
+}
+
+.shadow-none {
+	box-shadow: none !important;
+}
+
+// Width Height
+
+.w-25 {
+	width: 25% !important;
+}
+
+.w-50 {
+	width: 50% !important;
+}
+
+.w-75 {
+	width: 75% !important;
+}
+
+.w-100 {
+	width: 100% !important;
+}
+
+.w-fit {
+	width: fit-content !important;
+}
+
+.w-auto {
+	width: auto !important;
+}
+
+// Text
+.text-justify {
+	text-align: justify !important;
+}
+
+.text-truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-lowercase {
+	text-transform: lowercase !important;
+}
+
+.text-uppercase {
+	text-transform: uppercase !important;
+}
+
+.text-capitalize {
+	text-transform: capitalize !important;
+}
+
+.text-decoration-none {
+	text-decoration: none !important;
+}
+
+.text-break {
+	word-break: break-word !important;
+	overflow-wrap: break-word !important;
+}
+
+.visible {
+	visibility: visible !important;
+}
+
+.invisible {
+	visibility: hidden !important;
+}
+
+ol,
+ul {
+	list-style-type: none;
+}

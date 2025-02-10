@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.section{
+    height: 100vh;
+}
+@import "./global/navbar.scss";
+
+.card-section{
+    display: flex;
+
+    .left{
+        width: 50%;
+        background-color: rgb(228, 228, 228);
+
+        .category{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .category-btn{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            border: 1px solid black;
+            width: auto;
+            padding-inline: .5rem;
+            padding-block: .3rem;
+            border-radius: .3rem;
+            font-weight: 700;
+            margin-left: 3rem;
+            margin-top: 1rem;
+        }
+
+        .category-ruler{
+            margin-top: 1rem;
+        }
+
+        .gallery{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 4rem;
+        }
+
+        .product-view{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            background-color: rgb(200, 200, 200);
+            padding-block: 1.5rem;
+
+            img{
+                border: none;
+
+                &:hover{
+                    border: 2px solid black;
+                }
+            }
+        }
+    }
+
+    .right{
+        width: 50%;
+        padding-inline: 3rem;
+
+        .path{
+            display: flex;
+            justify-content:flex-end ;
+            padding-top: 1rem;
+
+            .item{
+                color: rgb(10, 186, 10);
+                padding-inline: .3rem;
+            }
+        }
+
+        .product{
+            color: rgb(2, 101, 71);
+            padding-block: 2rem;
+
+            .product-head{
+                font-size: 1.7rem;
+            }
+
+            .prod-color{
+                font-size: 1.3rem;
+                padding-top: .3rem;
+            }
+        }
+
+        .rating{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .line{
+            background-color: grey;
+            margin-block: 2rem;
+        }
+        .texture{
+            display: flex;
+            justify-content: space-between;
+
+            .col-text{
+                display: flex;
+                gap: 2rem;
+            }
+        }
+    }
+}

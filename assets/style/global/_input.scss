@@ -1,0 +1,172 @@
+.form-control {
+	font-weight: 500;
+	font-size: 1em;
+	line-height: 1.125em;
+	color: #000000;
+	display: block;
+	margin-bottom: 1em;
+}
+
+.form-input {
+	color: hsl(var(--theme-h) var(--theme-s) var(--theme-l) / var(--theme-a));
+	background: hsl(var(--theme-h) var(--theme-s) 100% / 1);
+	border: 1px solid hsl(var(--theme-h) 27% 74% / 1);
+	outline: none;
+	box-sizing: border-box;
+	border-radius: 0.3125rem;
+	padding: 0.6875rem;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.875rem;
+	width: 100%;
+
+	&::placeholder {
+		text-transform: capitalize;
+		color: hsl(var(--theme-h) 0% 74% / 1);
+	}
+
+	&:focus,
+	&:active {
+		--theme-s: 100%;
+		--theme-l: 30%;
+		transition: all 0.4s ease-in-out;
+		box-shadow: 0 0 1px 1px hsl(var(--theme-h) var(--theme-s) var(--theme-l) / var(--theme-a));
+	}
+}
+
+.form-error {
+	.form-input {
+		border-color: red;
+	}
+	.form-error-msg {
+		position: absolute;
+		bottom: -1.2rem;
+		left: 1.1rem;
+		color: red;
+		font-weight: 600;
+	}
+}
+
+textarea {
+	height: 9.0625rem;
+}
+
+// input[type="checkbox"] {
+//     color: red;
+// }
+
+.form-check {
+	label {
+		font-weight: 500;
+		font-size: 1em;
+		line-height: 1.1875em;
+		color: #000000;
+		position: relative;
+		display: flex;
+		align-items: center;
+		user-select: none;
+		cursor: pointer;
+
+		&::before {
+			content: "";
+			display: inline-flex;
+			width: 1em;
+			height: 1em;
+			border-radius: 0.25em;
+			margin-right: 0.625em;
+			border: 1px solid hsl(var(--theme-h) var(--theme-s) var(--theme-l) / var(--theme-a));
+
+			// position: absolute;
+			// left: -1.5rem;
+			// top: 50%;
+			// transform: translateY(-50%);
+		}
+
+		&::after {
+			content: "";
+			display: block;
+			width: 1em;
+			height: 1em;
+			position: absolute;
+			opacity: 0;
+			transform: scale(0);
+			border-radius: 0.25em;
+			background-size: 50%;
+			// background-color: hsl(var(--theme-h) var(--theme-s) var(--theme-l) / var(--theme-a));
+			background-image: url("/images/icons/tick.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			transition: all 0.25s cubic-bezier(0, 1.05, 0.72, 1.07);
+		}
+	}
+
+	input {
+		display: none;
+
+		&:checked ~ label {
+			&::after {
+				transform: scale(1);
+				opacity: 1;
+				transition: all 0.25s cubic-bezier(0, 1.05, 0.72, 1.07);
+			}
+
+			&::before {
+				background-color: hsl(
+					var(--theme-h) var(--theme-s) var(--theme-l) / var(--theme-a)
+				);
+			}
+		}
+	}
+}
+
+.form-radio {
+	label {
+		font-weight: 500;
+		font-size: 1em;
+		line-height: 1.1875em;
+		color: #000000;
+		position: relative;
+		display: flex;
+		align-items: center;
+		user-select: none;
+		cursor: pointer;
+
+		&::before {
+			content: "";
+			display: inline-flex;
+			width: 1em;
+			height: 1em;
+			border-radius: 50%;
+			margin-right: 0.625em;
+			background-color: #fff;
+			border: 2px solid hsl(var(--theme-h) var(--theme-s) var(--theme-l) / var(--theme-a));
+		}
+
+		&::after {
+			content: "";
+			display: block;
+			width: 1em;
+			height: 1em;
+			position: absolute;
+			opacity: 0;
+			transform: scale(0);
+			background-size: 60%;
+			background-image: url("/images/icons/tick.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			transition: all 0.25s cubic-bezier(0, 1.05, 0.72, 1.07);
+		}
+	}
+
+	input {
+		display: none;
+		&:checked ~ label::before {
+			background: hsl(var(--theme-h) var(--theme-s) var(--theme-l) / var(--theme-a));
+		}
+		&:checked ~ label::after {
+			transform: scale(1);
+			opacity: 1;
+			transition: all 0.25s cubic-bezier(0, 1.05, 0.72, 1.07);
+		}
+	}
+}

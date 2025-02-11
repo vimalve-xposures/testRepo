@@ -11,6 +11,7 @@
   display: flex;
   gap: 2rem;
   align-items: center;
+  padding-right: 1rem;
 }
 .navbar .search {
   display: flex;
@@ -45,13 +46,13 @@
 }
 .navbar .nav-bottom {
   display: flex;
-  gap: 3rem;
+  gap: 2.5rem;
   justify-content: flex-start;
   padding-inline: 6rem;
   padding-bottom: 1rem;
+  font-size: 0.9rem;
 }
 .navbar .nav-bottom .nav-elements {
   font-weight: 100;
-  font-size: 1rem;
   color: rgb(77, 76, 76);
 }/*# sourceMappingURL=navbar.css.map */

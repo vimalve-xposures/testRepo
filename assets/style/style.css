@@ -20,6 +20,7 @@
   display: flex;
   gap: 2rem;
   align-items: center;
+  padding-right: 1rem;
 }
 .navbar .search {
   display: flex;
@@ -54,14 +55,14 @@
 }
 .navbar .nav-bottom {
   display: flex;
-  gap: 3rem;
+  gap: 2.5rem;
   justify-content: flex-start;
   padding-inline: 6rem;
   padding-bottom: 1rem;
+  font-size: 0.9rem;
 }
 .navbar .nav-bottom .nav-elements {
   font-weight: 100;
-  font-size: 1rem;
   color: rgb(77, 76, 76);
 }
 
@@ -139,16 +140,119 @@
 .card-section .right .rating {
   display: flex;
   justify-content: flex-end;
+  padding-bottom: 2rem;
 }
 .card-section .right .line {
   background-color: grey;
-  margin-block: 2rem;
+  margin-block: 1rem;
 }
 .card-section .right .texture {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .card-section .right .texture .col-text {
   display: flex;
   gap: 2rem;
+  align-items: center !important;
+}
+.card-section .right .texture .col-text .product-color {
+  color: rgb(2, 101, 71);
+  font-size: 1.3rem;
+}
+.card-section .right .custom {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 0.5REM;
+  padding-right: 3rem;
+}
+.card-section .right .custom .custom-head {
+  display: flex;
+  align-items: center;
+}
+.card-section .right .custom .custom-body {
+  display: flex;
+  flex-direction: column;
+}
+.card-section .right .custom .custom-body .top {
+  font-size: 1.3rem;
+  color: rgb(2, 101, 71);
+}
+.card-section .right .custom .btn-class {
+  display: flex;
+  justify-content: flex-start;
+}
+.card-section .right .custom .btn {
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  background-color: rgb(14, 208, 14);
+  border: 1px solid rgb(14, 208, 14);
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+.card-section .right .quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 0.5rem;
+}
+.card-section .right .quantity .qua-head {
+  display: flex;
+  align-items: center;
+}
+.card-section .right .quantity .qua-body {
+  display: flex;
+  gap: 2rem;
+}
+.card-section .right .quantity .qua-body .left1 {
+  display: flex;
+  color: rgb(2, 2, 123);
+}
+.card-section .right .quantity .qua-body .left1 .dollar {
+  color: red;
+}
+.card-section .right .quantity .qua-body .left1 del {
+  text-decoration-color: red;
+  padding-left: 0.5rem;
+}
+.card-section .right .quantity .qua-body .right1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card-section .right .price {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.card-section .right .price .price-drop {
+  color: red;
+}
+.card-section .right .price del {
+  text-decoration-color: red;
+}
+.card-section .right .cart-btn {
+  display: flex;
+  justify-content: center;
+  padding-block: 1rem;
+}
+.card-section .right .cart-btn .btn1 {
+  background-color: rgb(38, 108, 88);
+  color: white;
+  font-size: 1rem;
+  padding-inline: 10rem;
+  padding-block: 1rem;
+  border: 1px solid rgb(38, 108, 88);
+  border-radius: 0.5rem;
+}
+.card-section .right .tags {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.card-section .right .tags a {
+  color: black !important;
 }/*# sourceMappingURL=style.css.map */

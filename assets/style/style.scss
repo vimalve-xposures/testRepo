@@ -85,7 +85,7 @@
             }
 
             .prod-color{
-                font-size: 1.3rem;
+                font-size: 1.3rem ;
                 padding-top: .3rem;
             }
         }
@@ -93,19 +93,129 @@
         .rating{
             display: flex;
             justify-content: flex-end;
+            padding-bottom: 2rem;
         }
 
         .line{
             background-color: grey;
-            margin-block: 2rem;
+            margin-block: 1rem;
         }
         .texture{
             display: flex;
             justify-content: space-between;
+            align-items: center;
 
             .col-text{
+                display:flex; 
+                gap: 2rem;
+                align-items: center !important;
+                .product-color{
+                    color: rgb(2, 101, 71);
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .custom{
+            display: flex;
+            justify-content: space-between;
+            padding-block: .5REM;
+            padding-right: 3rem;
+            .custom-head{
+                display: flex;
+                align-items: center;
+            }
+            .custom-body{
+                display: flex;
+                flex-direction: column;
+
+                .top{
+                    font-size: 1.3rem;
+                    color: rgb(2, 101, 71);
+                }
+            }
+            .btn-class{
+                display: flex;
+                justify-content: flex-start;
+            }
+            .btn{
+                padding-inline: 2rem;
+                padding-block: .5rem;
+                background-color: rgb(14, 208, 14);
+                border: 1px solid  rgb(14, 208, 14);
+                color: #ffff;
+                border-radius: .5rem;
+                font-size: 1rem;
+            }
+        }
+        .quantity{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-block: .5rem;
+
+            .qua-head{
+                display: flex;
+                align-items: center;
+            }
+            .qua-body{
                 display: flex;
                 gap: 2rem;
+
+                .left1{
+                    display: flex;
+                    color: rgb(2, 2, 123);
+                    .dollar{
+                        color: red;
+                    }
+                    del{
+                        text-decoration-color: red;
+                        padding-left: .5rem;
+                    }
+                }
+                .right1{
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                }
+            }
+        }
+
+        .price{
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            font-size: 2rem;
+            font-weight: 600;
+
+            .price-drop{
+                color: red;
+            }
+            del{
+                text-decoration-color: red;
+            }
+        }
+        .cart-btn{
+            display: flex;
+            justify-content: center;
+            padding-block: 1rem;
+            .btn1{
+                background-color: rgb(38, 108, 88);
+                color: #ffff;
+                font-size: 1rem;
+                padding-inline: 10rem;
+                padding-block: 1rem;
+                border: 1px solid  rgb(38, 108, 88);
+                border-radius: .5rem;
+            }
+
+        }
+        .tags{
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+
+            a{
+                color: black !important;
             }
         }
     }
